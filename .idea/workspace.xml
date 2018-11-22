@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/dbhelper.py" line="102" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/dbhelper.py" line="194" />
+    <bookmark url="file://$PROJECT_DIR$/cet_bot.py" line="1976" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4073fbeb-6c88-4f04-9926-abe23307eb3b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="560717626">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="28" />
+          <entry key="pyi" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="28" />
+          <entry key="PythonStub" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="996" />
+          <entry key="dummy" value="5" />
+          <entry key="py" value="47295" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Python" value="48291" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="cet_bot" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cet_bot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1542915808539" expanded="true" signature="1449:1599" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="8758:8889" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="9640:11510" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="10616:11510" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="15168:15856" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="16890:16891" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="17978:18207" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="21820:22782" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="60080:60579" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="60619:61302" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="65945:65946" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="69796:69843" ph="..." />
+                <marker date="1542915808539" expanded="true" signature="70044:70063" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbhelper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="244" column="45" selection-start-line="244" selection-start-column="45" selection-end-line="244" selection-end-column="45" />
+              <folding>
+                <marker date="1542912008590" expanded="true" signature="2412:2660" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="3221:3447" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="3474:3607" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="3635:3881" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="3933:4106" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="4564:4573" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="5330:5471" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="6186:6354" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="7684:7862" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="7908:7917" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="8134:8351" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="8653:8887" ph="..." />
+                <marker date="1542912008590" expanded="true" signature="9109:9250" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fileid</find>
+      <find>delete_message</find>
+      <find>t_</find>
+      <find>process_check</find>
+      <find>schedule</find>
+      <find>t_review</find>
+      <find>date,d</find>
+      <find>day = 5</find>
+      <find>= 5</find>
+      <find>attend</find>
+      <find>register_att</find>
+      <find>urllib</find>
+      <find>admin_menu</find>
+      <find>study</find>
+      <find>timetable</find>
+      <find>timetabl</find>
+      <find>x=self.conn.execute(stmt,args)</find>
+      <find>open</find>
+      <find>process_which_file</find>
+      <find>weekday</find>
+      <find>weekday()</find>
+      <find>get_weekday</find>
+      <find>677339387</find>
+      <find>hour =</find>
+      <find>time =</find>
+      <find>attendance</find>
+      <find>student</find>
+      <find>p</find>
+      <find>check_user_exists</find>
+      <find>user_not_exist</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>date</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/timer.py" />
+        <option value="$PROJECT_DIR$/venv/lib64/python3.7/site-packages/schedule/__init__.py" />
+        <option value="$PROJECT_DIR$/dbhelper.py" />
+        <option value="$PROJECT_DIR$/cet_bot.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="527" />
+    <option name="y" value="27" />
+    <option name="width" value="492" />
+    <option name="height" value="562" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cet_bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cet_bot" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <module name="cet_bot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="cet_bot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4073fbeb-6c88-4f04-9926-abe23307eb3b" name="Default Changelist" comment="" />
+      <created>1542308189063</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542308189063</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1024" height="741" extended-state="6" />
+    <layout>
+      <window_info id="Structure" order="0" sideWeight="0.5049505" side_tool="true" weight="0.21578422" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49339935" weight="0.21578422" />
+      <window_info id="Favorites" order="2" sideWeight="0.5066007" weight="0.21578422" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32838285" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014985" side_tool="true" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4985015" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.39768976" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Structure" order="0" sideWeight="0.5049505" side_tool="true" weight="0.21578422" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49339935" visible="true" weight="0.21578422" />
+      <window_info id="Favorites" order="2" sideWeight="0.5066007" weight="0.21578422" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32838285" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014985" side_tool="true" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4985015" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.39768976" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.7/site-packages/telebot/apihelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="963" selection-start-line="963" selection-end-line="963" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer.py" />
+    <entry file="file:///usr/lib64/python3.7/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="757" column="25" selection-start-line="757" selection-start-column="25" selection-end-line="757" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.7/site-packages/schedule/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib64/python3.7/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="1488" column="6" selection-start-line="1488" selection-start-column="6" selection-end-line="1488" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.7/site-packages/telebot/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12555">
+          <caret line="854" column="26" selection-start-line="854" selection-start-column="6" selection-end-line="854" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.7/site-packages/telebot/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="463" selection-start-line="463" selection-end-line="463" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1749795812/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="352" column="4" selection-start-line="352" selection-start-column="4" selection-end-line="352" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib64/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="315" column="40" selection-start-line="315" selection-end-line="316" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="244" column="45" selection-start-line="244" selection-start-column="45" selection-end-line="244" selection-end-column="45" />
+          <folding>
+            <marker date="1542912008590" expanded="true" signature="2412:2660" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="3221:3447" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="3474:3607" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="3635:3881" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="3933:4106" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="4564:4573" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="5330:5471" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="6186:6354" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="7684:7862" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="7908:7917" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="8134:8351" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="8653:8887" ph="..." />
+            <marker date="1542912008590" expanded="true" signature="9109:9250" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cet_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1542915808539" expanded="true" signature="1449:1599" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="8758:8889" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="9640:11510" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="10616:11510" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="15168:15856" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="16890:16891" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="17978:18207" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="21820:22782" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="60080:60579" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="60619:61302" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="65945:65946" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="69796:69843" ph="..." />
+            <marker date="1542915808539" expanded="true" signature="70044:70063" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
