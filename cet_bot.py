@@ -1982,7 +1982,6 @@ def delete_attendance_record():
 schedule.every().hour.at('05:00').do(give_info)
 schedule.every().day.at('04:58').do(give_morning_weather)
 bot.threaded=False
-give_morning_weather()
 while True:
     try:
         schedule.run_continuously()
