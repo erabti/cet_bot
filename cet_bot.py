@@ -71,7 +71,7 @@ def show_main_menu(message):
     ID = message.from_user.id
     text = "🌟القائمة الرئيسية🌟"
     if db.isteacher(ID):
-        show_menu(message, t_absent, t_hw, t_review, t_summary, t_message,t_get_attendance,t_attendance, t_schedule,weather_btn, text=text)
+        show_menu(message, t_absent, t_hw, t_review, t_summary, t_message,t_get_attendance,t_attendance, t_schedule,t_get_scores,weather_btn, text=text)
     elif db.get_info('admin', ID) == 1:
         show_menu(message, info_btn, homework_btn,weather_btn,study_btn, admin_btn,checkin_btn,settings_btn, text=text)
     else:
@@ -550,6 +550,7 @@ t_message = "ارسل رسالة ✉️"
 t_schedule = "مواقيت محاضراتي 🕑"
 t_attendance = "سجل حضوري 🙋‍♂️"
 t_get_attendance = "اعطيني الحضور 📅"
+t_get_scores = "اعطيني النقاط ⭐"
 def teacher_menu_handler(message):
     t = message.text
     if t == t_absent:
@@ -575,6 +576,99 @@ def teacher_menu_handler(message):
         bot.register_next_step_handler(message,process_get_attendance)
     elif t == weather_btn:
         send_today_weather(message)
+    elif t == t_get_scores:
+        give_scores(message)
+give_scores_student = "لطالب 👨‍🎓"
+give_scores_group = "لمجموعة 👥"
+def give_scores(message):
+    ID = message.chat.id
+    markup = types.ReplyKeyboardMarkup()
+    markup.add(give_scores_group,give_scores_student)
+    markup.add(back_btn)
+    bot.send_message(ID,"تبي نقاط لمن؟  🤔",reply_markup=markup)
+    bot.register_next_step_handler(message,give_scores_2)
+def give_scores_2(message):
+    ID = message.chat.id
+    text = message.text
+    if text == give_scores_student:
+        bot.send_message(ID,"شن رقم قيده؟ #️⃣",reply_markup=types.ReplyKeyboardRemove())
+        bot.register_next_step_handler(message,scores_regid)
+        return
+    elif text == give_scores_group:
+        markup = types.ReplyKeyboardMarkup()
+        groups = eval(db.get_info('groups',ID,table='teachers'))
+        markup.add(*list(map(str,groups)))
+        bot.send_message(ID,"لأي مجموعة؟ 🤔",reply_markup=markup)
+        bot.register_next_step_handler(message,scores_group,groups)
+def scores_group(message,groups):
+    ID = message.chat.id
+    subject = db.get_info('subject',ID,table='teachers')
+    group = message.text
+    if message.content_type != "text":
+        bot.send_message(ID,"ادخال خاطئ")
+        send_welcome(message)
+        return
+    if not group.isdigit():
+        bot.send_message(ID,"ادخال خاطئ")
+        send_welcome(message)
+        return
+    ids = db.get_all_group_ID(group)
+    text = "نقاط المجموعة "+group+" ⭐:"
+    for i in ids:
+        if i != "" and i != None:
+            name = db.get_info('name',i)
+            regid = db.get_info('regid',i)
+            score = db.get_info(subject,regid=regid,table='scores')
+            text += "\n"
+            text += str(regid) + "| "+name+" | "+str(score)
+    markup = types.ReplyKeyboardMarkup()
+    markup.add("صفّر","تمام")
+    bot.send_message(ID,text,reply_markup=markup)
+    bot.register_next_step_handler(message,zero_values_scores_group,[subject,group])
+def zero_values_scores_group(message,data):
+    ID = message.chat.id
+    t = message.text
+    subject = data[0]
+    group = data[1]
+    if t == "صفّر":
+        ids = db.get_all_group_ID(group)
+        for i in ids:
+            if i != "" and i != None:
+                db.update_info(subject,0,i,table='scores')
+        bot.send_message(ID,"تمام تم تصفير المجموعة بالكامل")
+        send_welcome(message)
+        return
+    send_welcome(message)
+def scores_regid(message):
+    ID = message.chat.id
+    regid = message.text
+    if message.content_type != "text":
+        bot.send_message(ID,"خطأ في الإدخال")
+        send_welcome(message)
+        return
+    if not regid.isdigit():
+        bot.send_message(ID,"خطأ في الإدخال يلزم يكون عدد")
+        send_welcome(message)
+        return
+    subject = db.get_info('subject',ID,table='teachers')
+    scores = db.get_info(subject,regid=regid,table='scores')
+    sname = db.get_info('name',regid=regid)
+    markup = types.ReplyKeyboardMarkup()
+    markup.add("تمام","صفّر")
+    bot.send_message(ID,"نقاط "+sname+" ⭐:\n"+str(scores),reply_markup=markup)
+    bot.register_next_step_handler(message,zero_values_scores,[subject,regid])
+def zero_values_scores(message,data):
+    ID = message.chat.id
+    subject =data[0]
+    regid = data[1]
+    if message.text == "صفّر":
+        db.update_info(subject,0,regid=regid,table='scores')
+        bot.send_message(ID,"تم التصفير")
+        send_welcome(message)
+        return
+    else:
+        bot.send_message(ID,"تمامات")
+        send_welcome(message)
 from datetime import timedelta
 def process_get_attendance(message):
     ID = message.chat.id
@@ -1982,6 +2076,10 @@ def delete_attendance_record():
 schedule.every().hour.at('05:00').do(give_info)
 schedule.every().day.at('04:58').do(give_morning_weather)
 bot.threaded=False
+schedule.run_continuously()
+bot.polling(none_stop=True, interval=1)
+
+"""
 while True:
     try:
         schedule.run_continuously()
@@ -1989,3 +2087,4 @@ while True:
     except Exception as e:
         bot.send_message(MID,e)
         time.sleep(5)
+"""
