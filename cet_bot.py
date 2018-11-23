@@ -12,6 +12,8 @@ tz = pytz.timezone('Africa/Tripoli')
 db = DBHelper()
 db.setup()
 TOKEN = "786130091:AAFNZjbMIq0UuGx4HOBMT4uhTETLTmTMAKs"
+#dummy
+#TOKEN = "786138936:AAH6SPX9QyhcS_hvlyQ_K-58Rt1P2gEh-Bo"
 bot = telebot.TeleBot(TOKEN)
 MID = "677339387"
 PASSWORD = '314159'
@@ -101,8 +103,21 @@ def show_settings_menu(message):
 @bot.message_handler(commands=['dev'])
 def send_dev_info(message):
     ID = message.chat.id
-    bot.send_message(ID,datetime.now(tz))
+    users = len(db.get_all_students_id())
+    text="server time: "+datetime.now(tz)
+    text+="\nyour ID: "+str(ID)
+    text+="\nnumber of total students: "+users
 
+    if db.isteacher(ID):
+        groups = eval(db.get_info('groups',ID,table='teachers'))
+        for grp in groups:
+            text += "\nnumber of students in group "+str(grp)+":"+len(db.get_all_group_ID(grp))
+    else:
+        grp = db.get_info('grp',ID)
+        text += "\nnumber of student in group "+str(grp)+":"+len(db.get_all_group_ID(grp))
+
+    bot.send_message(ID,text)
+    send_welcome(message)
 @bot.message_handler(regexp=back_btn)
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
@@ -1967,6 +1982,7 @@ def delete_attendance_record():
 schedule.every().hour.at('05:00').do(give_info)
 schedule.every().day.at('04:58').do(give_morning_weather)
 bot.threaded=False
+give_morning_weather()
 while True:
     try:
         schedule.run_continuously()
