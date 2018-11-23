@@ -106,15 +106,15 @@ def send_dev_info(message):
     users = len(db.get_all_students_id())
     text="server time: "+str(datetime.now(tz))
     text+="\nyour ID: "+str(ID)
-    text+="\nnumber of total students: "+users
+    text+="\nnumber of total students: "+str(users)
 
     if db.isteacher(ID):
         groups = eval(db.get_info('groups',ID,table='teachers'))
         for grp in groups:
-            text += "\nnumber of students in group "+str(grp)+":"+len(db.get_all_group_ID(grp))
+            text += "\nnumber of students in group "+str(grp)+":"+str(len(db.get_all_group_ID(grp)))
     else:
         grp = db.get_info('grp',ID)
-        text += "\nnumber of student in group "+str(grp)+":"+len(db.get_all_group_ID(grp))
+        text += "\nnumber of student in group "+str(grp)+":"+str(len(db.get_all_group_ID(grp)))
 
     bot.send_message(ID,text)
     send_welcome(message)
