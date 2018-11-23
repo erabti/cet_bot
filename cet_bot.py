@@ -570,7 +570,7 @@ def teacher_menu_handler(message):
     elif t == t_get_attendance:
         ID = message.chat.id
         markup = types.ReplyKeyboardMarkup()
-        markup.add(tomorrow_btn,today_btn)
+        markup.add(yesterday_bt,today_btn)
         markup.add(back_btn)
         bot.send_message(message.chat.id,"حضور بتاع اي يوم؟",reply_markup=markup)
         bot.register_next_step_handler(message,process_get_attendance)
@@ -674,8 +674,8 @@ def process_get_attendance(message):
     ID = message.chat.id
     if message.text == today_btn:
         d = 0
-    elif message.text == tomorrow_btn:
-        d = 1
+    elif message.text == yesterday_bt:
+        d = -1
     else:
         send_welcome(message)
         return
@@ -725,7 +725,7 @@ def get_group_for_attendance(message,date):
 
 today_btn = 'اليوم ⬇️'
 tomorrow_btn = 'غدوا ↖️'
-
+yesterday_bt = "امس ➡️"
 
 @bot.message_handler(regexp=t_absent)
 def process_teacher_absent(message):
