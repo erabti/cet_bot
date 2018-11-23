@@ -7,3 +7,26 @@ INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 201
 INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 12:00:00, next run: 2018-11-23 13:00:00)
 INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 12:00:00, next run: 2018-11-23 13:00:00)
 INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 13:00:00, next run: 2018-11-23 14:00:00)
+Traceback (most recent call last):
+  File "cet_bot.py", line 1989, in <module>
+    bot.polling(none_stop=True,interval=1)
+  File "/home/erabti/.local/lib/python3.7/site-packages/telebot/__init__.py", line 391, in polling
+    self.__non_threaded_polling(none_stop, interval, timeout)
+  File "/home/erabti/.local/lib/python3.7/site-packages/telebot/__init__.py", line 440, in __non_threaded_polling
+    while not self.__stop_polling.wait(interval):
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/usr/lib/python3.7/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 1273, in _shutdown
+    t.join()
+  File "/usr/lib/python3.7/threading.py", line 1032, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.7/threading.py", line 1048, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-23 15:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-23 15:00:00)
