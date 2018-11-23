@@ -104,7 +104,7 @@ def show_settings_menu(message):
 def send_dev_info(message):
     ID = message.chat.id
     users = len(db.get_all_students_id())
-    text="server time: "+datetime.now(tz)
+    text="server time: "+str(datetime.now(tz))
     text+="\nyour ID: "+str(ID)
     text+="\nnumber of total students: "+users
 
