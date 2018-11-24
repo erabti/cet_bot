@@ -30,3 +30,319 @@ Traceback (most recent call last):
 KeyboardInterrupt
 INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-23 15:00:00)
 INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-23 15:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-23 16:00:00)
+2018-11-23 16:50:30,664 (__init__.py:445 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2018-11-23 16:50:37,196 (__init__.py:445 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-23 17:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 17:00:01, next run: 2018-11-23 18:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 18:00:00, next run: 2018-11-23 19:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 19:00:01, next run: 2018-11-23 20:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-23 20:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 20:00:00, next run: 2018-11-23 21:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 20:00:00, next run: 2018-11-23 21:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 20:00:00, next run: 2018-11-23 21:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 20:00:00, next run: 2018-11-23 21:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 21:00:00, next run: 2018-11-23 22:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 21:00:00, next run: 2018-11-23 22:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 22:00:00, next run: 2018-11-23 23:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 22:00:00, next run: 2018-11-23 23:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 22:00:00, next run: 2018-11-23 23:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 23:00:00, next run: 2018-11-24 00:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 23:00:00, next run: 2018-11-24 00:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 23:00:00, next run: 2018-11-24 00:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-23 23:00:00, next run: 2018-11-24 00:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 00:00:01, next run: 2018-11-24 01:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 00:00:01, next run: 2018-11-24 01:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 00:00:01, next run: 2018-11-24 01:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 00:00:01, next run: 2018-11-24 01:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 00:00:01, next run: 2018-11-24 01:00:00)
+2018-11-24 01:13:17,786 (__init__.py:445 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. The server returned HTTP 502 Bad Gateway. Response body:
+[b'{"ok":false,"error_code":502,"description":"Bad Gateway"}']"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. The server returned HTTP 502 Bad Gateway. Response body:
+[b'{"ok":false,"error_code":502,"description":"Bad Gateway"}']
+2018-11-24 01:13:19,126 (__init__.py:445 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. The server returned HTTP 502 Bad Gateway. Response body:
+[b'{"ok":false,"error_code":502,"description":"Bad Gateway"}']"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. The server returned HTTP 502 Bad Gateway. Response body:
+[b'{"ok":false,"error_code":502,"description":"Bad Gateway"}']
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 01:00:00, next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 01:00:00, next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 01:00:00, next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 01:00:00, next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 01:00:00, next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 01:00:00, next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 01:00:00, next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-24 02:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 02:00:00, next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: [never], next run: 2018-11-24 03:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 03:00:00, next run: 2018-11-24 04:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 hour at 00:00:00 do give_info() (last run: 2018-11-24 04:00:00, next run: 2018-11-24 05:00:00)
+INFO:schedule:Running job Every 1 day at 04:58:00 do give_morning_weather() (last run: [never], next run: 2018-11-24 04:58:00)
+INFO:schedule:Running job Every 1 day at 04:58:00 do give_morning_weather() (last run: [never], next run: 2018-11-24 04:58:00)
+INFO:schedule:Running job Every 1 day at 04:58:00 do give_morning_weather() (last run: [never], next run: 2018-11-24 04:58:00)
+INFO:schedule:Running job Every 1 day at 04:58:00 do give_morning_weather() (last run: [never], next run: 2018-11-24 04:58:00)
+INFO:schedule:Running job Every 1 day at 04:58:00 do give_morning_weather() (last run: [never], next run: 2018-11-24 04:58:00)
+INFO:schedule:Running job Every 1 day at 04:58:00 do give_morning_weather() (last run: [never], next run: 2018-11-24 04:58:00)
+INFO:schedule:Running job Every 1 day at 04:58:00 do give_morning_weather() (last run: [never], next run: 2018-11-24 04:58:00)
+Exception in thread Thread-34:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 84, in run
+    run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 530, in run_pending
+    default_scheduler.run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 103, in run_pending
+    self._run_job(job)
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 156, in _run_job
+    ret = job.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 448, in run
+    ret = self.job_func()
+  File "cet_bot.py", line 2064, in give_morning_weather
+    get_day_info(None,0,i)
+  File "cet_bot.py", line 1546, in get_day_info
+    if len(schedule) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+Exception in thread Thread-42:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 84, in run
+    run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 530, in run_pending
+    default_scheduler.run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 103, in run_pending
+    self._run_job(job)
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 156, in _run_job
+    ret = job.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 448, in run
+    ret = self.job_func()
+  File "cet_bot.py", line 2064, in give_morning_weather
+    get_day_info(None,0,i)
+  File "cet_bot.py", line 1546, in get_day_info
+    if len(schedule) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 84, in run
+    run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 530, in run_pending
+    default_scheduler.run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 103, in run_pending
+    self._run_job(job)
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 156, in _run_job
+    ret = job.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 448, in run
+    ret = self.job_func()
+  File "cet_bot.py", line 2064, in give_morning_weather
+    get_day_info(None,0,i)
+  File "cet_bot.py", line 1546, in get_day_info
+    if len(schedule) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+Exception in thread Thread-40:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 84, in run
+    run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 530, in run_pending
+    default_scheduler.run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 103, in run_pending
+    self._run_job(job)
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 156, in _run_job
+    ret = job.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 448, in run
+    ret = self.job_func()
+  File "cet_bot.py", line 2064, in give_morning_weather
+    get_day_info(None,0,i)
+  File "cet_bot.py", line 1546, in get_day_info
+    if len(schedule) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+Exception in thread Thread-24:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 84, in run
+    run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 530, in run_pending
+    default_scheduler.run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 103, in run_pending
+    self._run_job(job)
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 156, in _run_job
+    ret = job.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 448, in run
+    ret = self.job_func()
+  File "cet_bot.py", line 2064, in give_morning_weather
+    get_day_info(None,0,i)
+  File "cet_bot.py", line 1546, in get_day_info
+    if len(schedule) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+Exception in thread Thread-38:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 84, in run
+    run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 530, in run_pending
+    default_scheduler.run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 103, in run_pending
+    self._run_job(job)
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 156, in _run_job
+    ret = job.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 448, in run
+    ret = self.job_func()
+  File "cet_bot.py", line 2064, in give_morning_weather
+    get_day_info(None,0,i)
+  File "cet_bot.py", line 1546, in get_day_info
+    if len(schedule) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+Exception in thread Thread-36:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 84, in run
+    run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 530, in run_pending
+    default_scheduler.run_pending()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 103, in run_pending
+    self._run_job(job)
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 156, in _run_job
+    ret = job.run()
+  File "/home/erabti/.local/lib/python3.7/site-packages/schedule/__init__.py", line 448, in run
+    ret = self.job_func()
+  File "cet_bot.py", line 2064, in give_morning_weather
+    get_day_info(None,0,i)
+  File "cet_bot.py", line 1546, in get_day_info
+    if len(schedule) == 0:
+TypeError: object of type 'NoneType' has no len()
+
+INFO:schedule:Running job Every 1 day at 04:58:00 do give_morning_weather() (last run: [never], next run: 2018-11-24 04:58:00)
