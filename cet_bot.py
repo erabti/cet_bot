@@ -1096,10 +1096,10 @@ def process_teacher_schedule(message):
     markup.add(back_btn)
     bot.send_message(ID,"لاي يوم؟ 🤔",reply_markup=markup)
     bot.register_next_step_handler(message,which_day_teacher_schedule)
-def which_day_teacher_schedule(message):
+def which_day_teacher_schedule(message,rank=None):
     text = message.text
     ID = message.from_user.id
-    if text == today_btn:
+    if text == today_btn or rank != None:
         schedule=get_teacher_schedule(ID,get_weekday(0,1))
     elif text == tomorrow_btn:
         schedule=get_teacher_schedule(ID,get_weekday(1,1))
@@ -1537,6 +1537,9 @@ def get_day_info(message, rank,sID=None):
         ID = sID
     else:
         ID = message.from_user.id
+    if db.isteacher(ID):
+        which_day_teacher_schedule(message,0)
+        return
     group = db.get_info('grp', ID)
     day = get_weekday(rank)
     day_word = "اليوم" if rank == 0 else "غدوا"
