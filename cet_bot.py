@@ -7,7 +7,6 @@ from weather import Weather, Unit
 from dbhelper import DBHelper
 import re
 import time
-
 tz = pytz.timezone('Africa/Tripoli')
 db = DBHelper()
 db.setup()
@@ -46,7 +45,11 @@ person_type_teacher_btn = "استاذ👨🏻‍🏫"
 back_btn = "↩️"
 right_btn = "✔️"
 wrong_btn = "❌"
+debug_mode = True
 
+def debug(name):
+    if debug_mode:
+        print(name)
 
 def get_dictkey(dic, val):
     try:
@@ -349,6 +352,7 @@ def process_which_file(message,cur):
                 else:
                     bot.send_message(ID,link)
     send_welcome(message)
+@bot.message_handler(regexp=checkin_btn)
 def process_checkin(message):
     ID = message.chat.id
     if user_not_exist(message):
@@ -376,11 +380,11 @@ def process_checkin_2(message):
     day_num = get_weekday(0,1)
     hour = datetime.now(tz).hour
     minute = datetime.now(tz).minute
+    minute=10
     if db.isteacher(ID):
         group = 0
     else:
         group = db.get_info("grp",ID)
-
     if message.content_type=="location":
         if message.location:
             long = float(message.location.longitude)
@@ -390,11 +394,13 @@ def process_checkin_2(message):
                     sched = eval(db.get_info('schedule',ID,table='teachers'))[day_num]
                     for grp in sched:
                         start_time = sched[grp][0]
+                        finish_time= sched[grp][1]
                         room = sched[grp][2]
-                        if (hour == start_time and minute < 30) or (hour == start_time-1 and minute > 40):
-                            bot.send_message(ID,"ارسل الكيو ار كود الخاص بالقاعة {} كصورة: ".format(room),reply_markup=types.ReplyKeyboardRemove())
-                            sbj = db.get_info('subject',ID,table='teachers')
-                            bot.register_next_step_handler(message,handle_qr_code,[room,sbj])
+                        if hour >= start_time and (hour < finish_time):
+                            bot.send_message(ID, "ارسل الكيو ار كود الخاص بالقاعة {} كصورة: ".format(room),
+                                             reply_markup=types.ReplyKeyboardRemove())
+                            sbj = db.get_info('subject', ID, table='teachers')
+                            bot.register_next_step_handler(message, handle_qr_code, [room, sbj])
                             return
                     bot.send_message(ID,"للأسف مانقدرش نسجلك لانه فات عليك وقت المحاضرة 🤷‍♂️")
                     send_welcome(message)
@@ -403,8 +409,9 @@ def process_checkin_2(message):
                     sched = db.get_day_schedule(group, day)
                     for sbj in sched:
                         start_time = sched[sbj][0]
+                        finish_time = sched[sbj][1]
                         room = sched[sbj][2]
-                        if (hour == start_time and minute < 30) or (hour == start_time-1 and minute > 40):
+                        if hour >= start_time and (hour < finish_time):
                             bot.send_message(ID,"ارسل الكيو ار كود الخاص بالقاعة {} كصورة: ".format(room),reply_markup=types.ReplyKeyboardRemove())
                             bot.register_next_step_handler(message,handle_qr_code,[room,sbj])
                             return
@@ -464,12 +471,12 @@ def handle_qr_code(message,data):
         else:
             bot.send_message(ID,"هذا مش كود القاعة رقم {}, حاول مرة ثانية: ".format(room))
             os.remove(localpath)
-            bot.register_next_step_handler(message, handle_qr_code, room)
+            bot.register_next_step_handler(message, handle_qr_code, data)
             return
     else:
         bot.send_message(ID,"ماقدرتش نقرا الصورة كويس 🤨, عاود ارسلها: ")
         os.remove(localpath)
-        bot.register_next_step_handler(message,handle_qr_code,room)
+        bot.register_next_step_handler(message,handle_qr_code,data)
 
 @bot.message_handler(regexp=settings_btn)
 def handle_settings_directly(message):
@@ -1096,19 +1103,25 @@ def process_teacher_schedule(message):
     markup.add(back_btn)
     bot.send_message(ID,"لاي يوم؟ 🤔",reply_markup=markup)
     bot.register_next_step_handler(message,which_day_teacher_schedule)
-def which_day_teacher_schedule(message,rank=None):
-    text = message.text
-    ID = message.from_user.id
+def which_day_teacher_schedule(message,rank=None,sID=None):
+    if message == None:
+        ID = sID
+        text = today_btn
+    else:
+        text = message.text
+        ID = message.chat.id
     if text == today_btn or rank != None:
         schedule=get_teacher_schedule(ID,get_weekday(0,1))
     elif text == tomorrow_btn:
         schedule=get_teacher_schedule(ID,get_weekday(1,1))
     else:
-        send_welcome(message)
+        if message:
+            send_welcome(message)
         return
     if not len(schedule):
         bot.send_message(ID,"ماعندكش اي محاضرات😄")
-        send_welcome(message)
+        if message:
+            send_welcome(message)
         return
     elif len(schedule)==1:
         report="عندك محاضرة وحدة, "
@@ -1122,7 +1135,8 @@ def which_day_teacher_schedule(message,rank=None):
         grp = get_dictkey(schedule,t)
         report += "\n🛑 في المجموعة رقم {g} من الساعة {f} الى الساعة {t} في القاعة رقم {h}".format(g=grp,f=t[0],t=t[1],h=t[2])
     bot.send_message(ID,report)
-    send_welcome(message)
+    if message:
+        send_welcome(message)
 
 
 def get_teacher_schedule(ID,day):
@@ -1531,40 +1545,39 @@ def convert_time_to_readable(t):
         return t - 12
     else:
         return t
-
 def get_day_info(message, rank,sID=None):
     if not message:
         ID = sID
     else:
-        ID = message.from_user.id
+        ID = message.chat.id
     if db.isteacher(ID):
-        which_day_teacher_schedule(message,0)
+        which_day_teacher_schedule(message,0,sID)
         return
     group = db.get_info('grp', ID)
     day = get_weekday(rank)
     day_word = "اليوم" if rank == 0 else "غدوا"
-    schedule = db.get_day_schedule(group, day)
-    if len(schedule) == 0:
+    sched = db.get_day_schedule(group, day)
+    if len(sched) == 0:
         bot.send_message(ID, "ماعندكش {dd} اي محاضرات😍".format(dd=day_word),disable_notification=True)
         if message:
             send_welcome(message)
         return
 
-    if len(schedule) == 1:
+    if len(sched) == 1:
         w = "محاضرة"
-    elif len(schedule) == 2:
+    elif len(sched) == 2:
         w = "محاضرتين:"
     else:
-        w = str(len(schedule)) + " محاضرات:"
+        w = str(len(sched)) + " محاضرات:"
 
     text = "عندك {dd} {ww} ".format(ww=w,dd=day_word)
     wa = "🛑 و"
-    schedule_list = list(schedule)
+    schedule_list = list(sched)
     for i in range(len(schedule_list)):
         sb = subjects_en[schedule_list[i]]
-        frm = convert_time_to_readable(schedule[schedule_list[i]][0])
-        to = convert_time_to_readable(schedule[schedule_list[i]][1])
-        room = schedule[schedule_list[i]][2]
+        frm = convert_time_to_readable(sched[schedule_list[i]][0])
+        to = convert_time_to_readable(sched[schedule_list[i]][1])
+        room = sched[schedule_list[i]][2]
         text += "{s} من {f} الى {t} في القاعة {r} ".format(s=sb, f=frm, t=to,r=room)
 
         if len(schedule_list) > 1 and i != (len(schedule_list) - 1):
@@ -1947,10 +1960,6 @@ def get_insert_group_regid(message):
         send_error()
         return
 
-bot.enable_save_next_step_handlers(delay=5)
-bot.load_next_step_handlers()
-
-
 def translate_weather_code(code):
     def gcode(frm, to):
         return list(range(frm, int(to) + 1))
@@ -2013,7 +2022,6 @@ def give_info():
     groups = db.get_availiabe_groups()
     for grp in groups:
         sched = db.get_day_schedule(grp,day)
-        print(sched)
         if sched:
             for sbj in sched:
                 start = sched[sbj][0]
@@ -2064,9 +2072,6 @@ def give_morning_weather():
             bot.send_message(i, text2,disable_notification=True)
             get_day_info(None,0,i)
 
-@bot.message_handler(regexp=".*")
-def handle_any_text(message):
-    main_menu_handler(message)
 def handle_not_known(message):
     if message.text != "/start" and message.text != back_btn:
         send_welcome(message)
@@ -2078,14 +2083,14 @@ def delete_attendance_record():
             os.remove(folder+file)
 schedule.every().hour.at('05:00').do(give_info)
 schedule.every().day.at('04:58').do(give_morning_weather)
-bot.threaded=False
 schedule.run_continuously()
-bot.polling(none_stop=True, interval=1)
+bot.disable_save_next_step_handlers()
+bot.disable_save_reply_handlers()
 
 while True:
     try:
-        schedule.run_continuously()
-        bot.polling(none_stop=True,interval=1)
+        bot.polling(none_stop=True,interval=3)
     except Exception as e:
         bot.send_message(MID,e)
-        time.sleep(5)
+        bot.stop_polling()
+        time.sleep(3)

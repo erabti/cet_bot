@@ -5,7 +5,6 @@ class DBHelper:
         self.dbname = dbname
         self.conn = sqlite3.connect(dbname, check_same_thread=False)
 
-
     def setup(self):
         stmt = "CREATE TABLE IF NOT EXISTS people (ID INTEGER,regid INTEGER ,name TEXT,grp INTEGER,admin INTEGER,pw TEXT,PRIMARY KEY(regid))"
         stmt2= "CREATE TABLE IF NOT EXISTS givenhomework(uni INTEGER,ID INTEGER, fileid TEXT, grp INTEGER, subject TEXT)"
