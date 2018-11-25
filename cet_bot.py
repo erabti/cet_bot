@@ -870,10 +870,10 @@ def want_to_delete_past_hws(message,data):
             if fileid:
                 bot.send_message(i, "عندك واجب {s}:".format(s=subject_ar))
                 bot.send_photo(i, fileid, caption=info)
-                db.add_homework_group(grp, subject, info, fileid)
+                db.add_homework_one(ID,grp, subject, info, fileid)
             else:
                 bot.send_message(i,"عندك واجب {s}, ينص: {i}".format(s=subject_ar,i=info))
-                db.add_homework_group(grp, subject, info)
+                db.add_homework_one(ID,grp, subject, info)
     bot.send_message(ID,"تمام, تم ارسال الواجب لكل الطلبة",reply_markup=types.ReplyKeyboardRemove())
     send_welcome(message)
 
@@ -1150,6 +1150,7 @@ def get_teacher_schedule(ID,day):
 sendhw_menu_btn = "ابعت واجب 📝"
 alert_menu_btn = "ابعت رسالة للقروب 💬"
 send_summary_menu_btn = "ابعت ملخص درس اليوم ⬇️"
+send_today_lecture_bto = "ابعت محاضرة اليوم 👨‍🏫" #todo
 admin_polling_menu_btn = "قائمة ترشيح المشرفين 🗳️"
 start_polling_btn = 'ابدا في ترشيح المشرف 🏁'
 start_voting_btn = 'ابدا في التصويت 🗳️'
