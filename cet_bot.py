@@ -47,18 +47,27 @@ right_btn = "✔️"
 wrong_btn = "❌"
 debug_mode = True
 
+import inspect
 def debug(name):
     if debug_mode:
-        print(name)
+        curframe = inspect.currentframe()
+        callframe = inspect.getouterframes(curframe, 2)
+        print('in :',callframe[1][3])
 
 def get_dictkey(dic, val):
     try:
-        x = list(dic.keys())[list(dic.values()).index(val)]
-        return x
+        if dic:
+            x = list(dic.keys())[list(dic.values()).index(val)]
+            return x
     except Exception as e:
         print(e)
 
 def user_not_exist(message):
+    """
+    check if student teacher or student and send welcome if not
+    :param message: message from telebot
+    :return: True if user not teacher and not student
+    """
     ID = message.chat.id
     if not db.user_exists(ID) and not db.isteacher(ID):
         send_welcome(message)
@@ -271,7 +280,7 @@ study_en = {"exam" : "اسئلة امتحانات 💯",
 "exercise" : "تمارين 🏋️",
 "book" : "كتب 📚",
 "explain" : "شروحات 👨‍🏫","course":"كورسات 📺",
-"summary" : "ملخصات 📜"}
+"summary" : "ملخصات 📜", "sheet": "شيتات 📄"}
 
 def get_subject_study(message):
     ID = message.chat.id
@@ -1879,7 +1888,6 @@ def process_group(message,data):
         regid = data[0]
         password = data[1]
         name = data[2]
-        group = data[2]
         db.add_person(ID,regid,name,group,admin=0,pw=password)
         bot.reply_to(message, "تو هكي انت تمام التمام 😄 ان شاء الله نكون مساعد كويس, وبالتوفيق🎓")
         send_welcome(message)
@@ -1901,12 +1909,12 @@ def manage_alert(message, text=None):
         group = db.get_info('grp', ID)
         ids = db.get_all_group_ID(group)
         bot.send_message(ID, "تم!")
+        print(ids)
         for i in ids:
-            if i == ID:
-                continue
+            print(i)
             name = db.get_firstname(i)
-            text = text.replace('عبود', name)
-            bot.send_message(i, text)
+            msg = text.replace('عبود', name)
+            bot.send_message(i, msg)
         send_welcome(message)
 
 
